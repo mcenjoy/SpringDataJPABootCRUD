@@ -64,6 +64,7 @@ public class PersonController {
             return "update-person";
         }
         personService.updatePerson(person);
+        model.addAttribute("person", person);
         model.addAttribute("persons", personService.findAll());
         return "redirect:/all";
     }
