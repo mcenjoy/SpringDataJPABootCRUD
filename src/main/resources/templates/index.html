@@ -37,6 +37,7 @@
                                 <td><a th:href="@{/edit/{id}(id=${person.id})}"
                                        class="text-primary"><i class="fa fa-fw fa-edit"></i>Edit</a></td>
                                 <td><a th:href="@{/delete/{id}(id=${person.id})}"
+                                       onclick="return confirm('Are you sure want to delete this Person?')"
                                        class="text-danger"><i class="fa fa-fw fa-trash"></i>Delete</a></td>
                             </tr>
                             </tbody>
